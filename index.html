@@ -17,10 +17,17 @@
   <div class="meme-text"></div>
 
   <script>
-   var num = Math.floor(Math.random() * 6) + 1;
 
-   var v = document.getElementById("main"); 
-            v.classList.add("oops0" + num); 
+    document.addEventListener("DOMContentLoaded", theDomHasLoaded, false);
+
+    function theDomHasLoaded(e) {
+      var num = Math.floor(Math.random() * 6) + 1;
+
+      var v = document.getElementById("main"); 
+      v.classList.add("oops0" + num); 
+
+    }
+
   </script>
 </body>
 </html>
